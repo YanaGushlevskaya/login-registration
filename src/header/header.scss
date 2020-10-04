@@ -1,0 +1,46 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: rgb(243, 243, 243);
+  border-bottom: 1px solid rgb(148, 148, 148);
+  @media (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(148, 148, 148);
+  }
+  
+  nav {
+    font-size: 14px;
+    @media (min-width: 992px) {
+      font-size: 20px;
+    }
+
+    a {
+      font-weight: 700;
+      color: #000;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: rgba(#000, .6);
+      }
+
+      &.active {
+        color: #007bff;
+      }
+    }
+    
+    a:not(:last-child) {
+      padding-right: 10px;
+      @media (min-width: 992px) {
+        padding-right: 20px;
+      }  
+    }
+
+    a.home-link {
+      margin-right: auto;
+    }
+  }
+}
