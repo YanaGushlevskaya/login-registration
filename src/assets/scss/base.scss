@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: $base-text-color;
+  background-color: $background-base;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 15px;
+  @include small {
+    max-width: 540px
+  }
+  @include medium {
+    max-width: 720px
+  }
+  @include large {
+    max-width: 960px
+  }
+  @include extra {
+    max-width: 1140px
+  }
+  @include xxl {
+    max-width: 1320px
+  }
+}
+
+.link {
+  color: $base-text-color;
+  &:hover {
+    text-transform: none;
+    color: rgba($base-text-color, 0.5);
+  }
+}
+
+.form-default {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+
+  button[type=submit] {
+    background-color: transparent;
+    border: 2px solid #BF5815;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    appearance: none;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: .05em;
+    color: #BF5815;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .3s;
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #BF5815;
+      transition: all .3s;
+    }
+  }
+}
+
+.input-default {
+  padding: 7px 16px;
+  line-height: 160%;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  background-color: #fff;
+  appearance: none;
+  outline: none;
+  font-size: 14px;
+  letter-spacing: .01em;
+  color: #000;
+
+  & + div {
+    font-size: 10px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    color: red;
+  }
+}

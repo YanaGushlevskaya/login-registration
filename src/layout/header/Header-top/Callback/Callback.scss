@@ -1,0 +1,35 @@
+.callback {
+  display: flex;
+  flex-direction: column;
+
+  .callback__link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+
+    .anticon-phone {
+      padding: 5px;
+      border: 1px solid #BF5815;
+      border-radius: 50%;
+      transform: rotate(90deg);
+      margin-right: 7px;
+      
+      svg path {
+        color: #BF5815;
+      }
+    }
+  }
+
+  .ant-btn {
+    font-size: 14px;
+    background: transparent;
+    padding: 0;
+    border: none;
+    margin-left: 35px;
+    box-shadow: none;
+    &:hover,
+    &:focus {
+      color: rgba(#000, 0.5);
+    }
+  }
+}

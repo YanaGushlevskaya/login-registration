@@ -1,13 +1,24 @@
-.header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.header-top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-family: 'Noto Sans', sans-serif;
-  background-color: rgb(243, 243, 243);
-  border-bottom: 1px solid rgb(148, 148, 148);
+  &:before {
+    content: '';
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    border-bottom: 1px solid rgb(207, 207, 207);
+  }
   @media (min-width: 768px) {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-bottom: 2px solid rgb(148, 148, 148);
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   nav {
